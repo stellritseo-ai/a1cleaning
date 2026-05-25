@@ -25,7 +25,7 @@ export function FAQ() {
             <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium text-primary mb-5 w-fit">
               ❓ FAQs
             </div>
-            <h2 className="font-display font-bold leading-tight mb-8" style={{ fontSize: "45px" }}>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-[45px] leading-tight mb-8">
               Questions, <span className="text-gradient">answered</span>
             </h2>
 
@@ -44,7 +44,7 @@ export function FAQ() {
                       onClick={() => setOpen(isOpen ? null : i)}
                       className="w-full flex items-center justify-between gap-4 p-5 text-left focus:outline-none"
                     >
-                      <span className="font-display font-semibold text-foreground" style={{ fontSize: "18px" }}>{f.q}</span>
+                      <span className="font-display font-semibold text-foreground text-base sm:text-lg">{f.q}</span>
                       <ChevronDown className={`w-5 h-5 shrink-0 text-primary transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
                     </button>
                     <div
@@ -69,13 +69,13 @@ export function FAQ() {
               <img
                 src={faqImg}
                 alt="Spotless detailed living room"
-                className="w-full h-[520px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[320px] sm:h-[450px] lg:h-[520px] object-cover hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
 
             {/* Floating Support Badge */}
-            <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-5 shadow-luxury animate-float border border-white/20 flex items-center gap-3">
+            <div className="hidden sm:flex absolute -bottom-6 -left-6 glass rounded-2xl p-5 shadow-luxury animate-float border border-white/20 items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-gradient-brand flex items-center justify-center shrink-0">
                 <Phone className="w-5 h-5 text-white" />
               </div>

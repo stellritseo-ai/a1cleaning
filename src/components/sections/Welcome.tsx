@@ -36,19 +36,19 @@ export function Welcome() {
   return (
     <section className="relative overflow-hidden" style={{ paddingTop: "60px", paddingBottom: "60px" }}>
       <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-gradient-brand opacity-10 blur-3xl" />
-      <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-14 items-center">
+      <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div className="relative" data-reveal>
           <div className="absolute -inset-4 bg-gradient-brand opacity-20 blur-2xl rounded-3xl" />
           <div className="relative rounded-3xl overflow-hidden shadow-luxury">
-            <img src={danielImg} alt="Daniel Alado — owner of A-1 Cleaning Services" width={1024} height={1280} loading="lazy" className="w-full h-[560px] object-cover" />
+            <img src={danielImg} alt="Daniel Alado — owner of A-1 Cleaning Services" width={1024} height={1280} loading="lazy" className="w-full h-[320px] sm:h-[450px] lg:h-[560px] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </div>
           {/* floating badge */}
-          <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-5 shadow-luxury animate-float">
+          <div className="hidden sm:block absolute -bottom-6 -left-6 glass rounded-2xl p-5 shadow-luxury animate-float">
             <div className="text-3xl font-display font-bold text-gradient">10+</div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground">Years Experience</div>
           </div>
-          <div className="absolute -top-6 -right-6 glass rounded-2xl p-4 shadow-luxury animate-float" style={{ animationDelay: "1s" }}>
+          <div className="hidden sm:block absolute -top-6 -right-6 glass rounded-2xl p-4 shadow-luxury animate-float" style={{ animationDelay: "1s" }}>
             <div className="flex items-center gap-1 text-yellow-500">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
             </div>
@@ -60,27 +60,27 @@ export function Welcome() {
           <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium text-primary">
             <Sparkles className="w-3.5 h-3.5" /> Meet your local cleaner
           </div>
-          <h2 className="mt-5 font-display font-bold leading-tight" style={{ fontSize: "40px" }}>
+          <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl lg:text-[40px] leading-tight">
             Hi, I'm <span className="text-gradient">Daniel Alado</span> — Your Trusted Local Cleaner
           </h2>
           {/* glowing accent line */}
           <div className="mt-5 h-1 w-24 rounded-full bg-gradient-brand glow-blue" />
 
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
             For over a decade, I've built A-1 Cleaning Services on one simple promise: <span className="text-foreground font-medium">we clean like we own it</span>.
             From luxury homes to busy offices, every surface gets the same blue-purple standard of care — meticulous, dependable, and delivered with pride.
           </p>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
+          <p className="mt-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
             We're a local Albuquerque team available 24/7 for emergencies, with flexible scheduling across 15+ cities in New Mexico.
           </p>
 
           {/* Collapsible Read More content */}
           {isExpanded && (
             <div className="mt-4 space-y-4 animate-fade-up">
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 We use only top-tier, eco-friendly sanitizing products that are safe for pets and families, combined with advanced commercial-grade equipment to ensure a flawless finish on every surface.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 Whether you need a standard weekly touch-up or a meticulous deep clean to prepare a home for listing, we design our schedule around your life. At A-1 Cleaning Services LLC, your satisfaction isn't just a goal—it's our standard.
               </p>
             </div>
@@ -94,7 +94,7 @@ export function Welcome() {
             <ArrowRight className={`w-4 h-4 transition-transform group-hover:translate-x-1 duration-300 ${isExpanded ? "-rotate-90 group-hover:translate-x-0 group-hover:-translate-y-0.5" : ""}`} />
           </button>
 
-          <div className="mt-10 grid grid-cols-3 gap-6 glass rounded-2xl p-6">
+          <div className="mt-10 grid grid-cols-3 gap-2 sm:gap-6 glass rounded-2xl p-4 sm:p-6">
             <Counter to={10} suffix="+" label="Years" />
             <Counter to={63} label="Mile radius" />
             <Counter to={500} suffix="+" label="Happy clients" />

@@ -50,14 +50,13 @@ export function Hero() {
           </div>
 
           <h1 className="font-display font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
-            <span className="block bg-clip-text text-transparent animate-fade-up" style={{
+            <span className="block bg-clip-text text-transparent animate-fade-up text-3xl sm:text-4xl md:text-5xl lg:text-[45px] leading-tight" style={{
               backgroundImage: "linear-gradient(90deg, #E8E0FF 0%, #2E5AFF 50%, #E8E0FF 60%)",
               animationDelay: "0.1s",
-              fontSize: "45px",
             }}>
               10 Years of Excellence — 63 Miles of Clean.
             </span>
-            <span className="block text-white/90 animate-fade-up" style={{ animationDelay: "0.2s", fontSize: "39px", marginTop: "21px" }}>
+            <span className="block text-white/90 animate-fade-up text-2xl sm:text-3xl md:text-4xl lg:text-[39px] leading-tight" style={{ animationDelay: "0.2s", marginTop: "21px" }}>
               Emergency? We're There 24/7.
             </span>
           </h1>

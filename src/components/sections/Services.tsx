@@ -32,7 +32,7 @@ export function Services() {
           <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-primary mb-5">
             ✨ Our Services
           </div>
-          <h2 className="font-display font-bold" style={{ fontSize: "41px" }}>
+          <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-[41px] leading-tight">
             All Kinds of Cleaning. <span className="text-gradient">One Call.</span>
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">
@@ -43,7 +43,7 @@ export function Services() {
         {/* Featured Emergency card */}
         <div className="mt-16" data-reveal>
           <a href="#contact" className="group relative block rounded-3xl overflow-hidden shadow-luxury animate-glow-pulse">
-            <div className="aspect-[21/9] sm:aspect-[21/8]">
+            <div className="aspect-[16/11] sm:aspect-[21/9] sm:aspect-[21/8] min-h-[300px] sm:min-h-0">
               <img src={svcEmergency} alt="24/7 emergency cleaning" width={1920} height={864} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="absolute inset-0" style={{
@@ -55,7 +55,7 @@ export function Services() {
                   <AlertTriangle className="w-3.5 h-3.5" /> Featured • 24/7 Emergency
                 </div>
                 <h3 className="font-display font-bold text-3xl sm:text-5xl">🚨 Emergency Cleaning</h3>
-                <p className="mt-3 text-white/85 text-base sm:text-lg max-w-xl">
+                <p className="mt-3 text-white/85 text-sm sm:text-base md:text-lg max-w-xl">
                   24/7 emergency cleaning for water damage, unexpected messes, restoration, and urgent cleanup situations.
                 </p>
                 <span className="mt-5 inline-flex items-center gap-2 font-semibold text-white">

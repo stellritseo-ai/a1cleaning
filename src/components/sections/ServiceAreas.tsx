@@ -23,7 +23,7 @@ export function ServiceAreas() {
           <div className="lg:col-span-5 relative" data-reveal>
             {/* Outer glowing backdrop frame */}
             <div className="absolute -inset-4 bg-gradient-brand opacity-20 blur-2xl rounded-3xl" />
-            <div className="relative rounded-3xl overflow-hidden shadow-luxury border border-white/20 h-[450px]">
+            <div className="relative rounded-3xl overflow-hidden shadow-luxury border border-white/20 h-[300px] sm:h-[400px] lg:h-[450px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208958.64661445262!2d-106.83679321593563!3d35.08226111435563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220addd309837b%3A0xc0d3f8ceb8d9f6fd!2sAlbuquerque%2C%20NM%2C%20USA!5e0!3m2!1sen!2snp!4v1779739319677!5m2!1sen!2snp"
                 width="100%"
@@ -42,7 +42,7 @@ export function ServiceAreas() {
             <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-primary mb-5 w-fit">
               <MapPin className="w-3.5 h-3.5" /> Service Areas
             </div>
-            <h2 className="font-display font-bold leading-tight" style={{ fontSize: "40px" }}>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-[40px] leading-tight">
               Covering <span className="text-gradient">63 miles</span> of New Mexico
             </h2>
             <p className="mt-4 text-muted-foreground text-base sm:text-lg">

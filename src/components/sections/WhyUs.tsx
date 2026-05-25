@@ -27,13 +27,13 @@ export function WhyUs() {
               <img
                 src={whyImg}
                 alt="Spotless clean interior"
-                className="w-full h-[540px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[320px] sm:h-[450px] lg:h-[540px] object-cover hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
 
             {/* Floating Experience Badge */}
-            <div className="absolute -bottom-6 -right-6 glass rounded-2xl p-5 shadow-luxury animate-float border border-white/20">
+            <div className="hidden sm:block absolute -bottom-6 -right-6 glass rounded-2xl p-5 shadow-luxury animate-float border border-white/20">
               <div className="flex items-center gap-1 text-yellow-500 mb-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
@@ -47,7 +47,7 @@ export function WhyUs() {
             <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-primary mb-5 w-fit">
               💜💙 Why Choose Us
             </div>
-            <h2 className="font-display font-bold leading-tight mb-8" style={{ fontSize: "45px" }}>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-[45px] leading-tight mb-8">
               Premium care, <span className="text-gradient">every detail</span>
             </h2>
 

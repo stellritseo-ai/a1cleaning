@@ -19,10 +19,10 @@ export function QuoteForm() {
           <div className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs font-medium border border-white/20 mb-5">
             💬 Free Quote
           </div>
-          <h2 className="font-display font-bold leading-tight" style={{ fontSize: "35px" }}>
+          <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-[35px] leading-tight">
             Get Your <span style={{ background: "linear-gradient(90deg,#E8E0FF,#2E5AFF)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>Free Quote</span> Today
           </h2>
-          <p className="mt-5 text-white/80 leading-relaxed">
+          <p className="mt-5 text-white/80 leading-relaxed text-sm sm:text-base">
             Tell us about your space and schedule. We'll get back to you fast with a tailored quote.
           </p>
 
@@ -46,7 +46,7 @@ export function QuoteForm() {
         <form
           data-reveal
           onSubmit={(e) => { e.preventDefault(); setSent(true); }}
-          className="lg:col-span-3 glass rounded-3xl p-6 sm:p-10 shadow-luxury"
+          className="lg:col-span-3 glass rounded-3xl p-6 sm:p-10 shadow-luxury w-full"
         >
           {sent ? (
             <div className="text-center py-16">
@@ -66,7 +66,7 @@ export function QuoteForm() {
               <SelectField label="Schedule Needed" name="schedule" options={["ASAP / Emergency","This Week","This Month","Recurring","Flexible"]} />
               <div className="sm:col-span-2">
                 <label className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Message</label>
-                <textarea name="message" rows={4} placeholder="Tell us about your space…" className="w-full rounded-xl bg-white/70 border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue focus:border-transparent focus:shadow-[0_0_0_4px_oklch(0.58_0.25_265/0.15)] transition-all" />
+                <textarea name="message" rows={4} placeholder="Tell us about your space…" className="w-full rounded-xl bg-white/70 border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue focus:border-transparent focus:shadow-[0_0_0_4px_rgba(46,90,255,0.15)] transition-all" />
               </div>
               <div className="sm:col-span-2">
                 <button type="submit" className="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-brand text-white px-7 py-4 font-semibold shadow-luxury hover:scale-[1.02] transition-transform glow-blue">
@@ -89,7 +89,7 @@ function Field({ label, name, type = "text" }: { label: string; name: string; ty
         type={type}
         name={name}
         required
-        className="w-full rounded-xl bg-white/70 border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue focus:border-transparent focus:shadow-[0_0_0_4px_oklch(0.58_0.25_265/0.15)] transition-all"
+        className="w-full rounded-xl bg-white/70 border border-border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue focus:border-transparent focus:shadow-[0_0_0_4px_rgba(46,90,255,0.15)] transition-all"
       />
     </div>
   );
