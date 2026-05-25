@@ -89,9 +89,9 @@
   --shadow-luxury: 0 30px 80px -20px oklch(0.32 0.21 305 / 0.35), 0 10px 30px -10px oklch(0.58 0.25 265 / 0.2);
   --shadow-card: 0 20px 50px -15px oklch(0.32 0.21 305 / 0.25);
 
-  --glass-bg: oklch(1 0 0 / 0.65);
-  --glass-bg-dark: oklch(0.18 0.1 295 / 0.4);
-  --glass-border: oklch(1 0 0 / 0.18);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-bg-dark: rgba(18, 12, 28, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.15);
 }
 
 @layer base {
@@ -135,7 +135,7 @@
     background: var(--glass-bg-dark);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid oklch(1 0 0 / 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .glow-blue { box-shadow: var(--glow-blue); }

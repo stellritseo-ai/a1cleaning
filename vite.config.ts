@@ -13,4 +13,13 @@ export default defineConfig({
       entry: "server",
     },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          inlineDynamicImports: true,
+        },
+      },
+    },
+  },
 });
