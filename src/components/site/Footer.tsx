@@ -35,6 +35,7 @@ export function Footer() {
             <h4 className="font-display font-semibold mb-4 text-lg">Contact</h4>
             <ul className="space-y-3 text-sm text-white/80">
               <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5 text-electric-blue" /> <a href="tel:5054569603" className="hover:text-white">(505) 456-9603</a></li>
+              <li className="flex items-start gap-2"><Phone className="w-4 h-4 mt-0.5 text-electric-blue" /> <a href="tel:18886809992" className="hover:text-white">+1 888 680 9992 <span className="text-white/50 text-xs">(Toll-Free)</span></a></li>
               <li className="flex items-start gap-2"><Mail className="w-4 h-4 mt-0.5 text-electric-blue" /> <a href="mailto:a1cleaningservicenm@gmail.com" className="hover:text-white break-all">a1cleaningservicenm@gmail.com</a></li>
               <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 text-electric-blue" /> Albuquerque, NM + 63 miles</li>
             </ul>

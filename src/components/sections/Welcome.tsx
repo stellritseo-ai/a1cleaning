@@ -45,7 +45,7 @@ export function Welcome() {
           </div>
           {/* floating badge */}
           <div className="hidden sm:block absolute -bottom-6 -left-6 glass rounded-2xl p-5 shadow-luxury animate-float">
-            <div className="text-3xl font-display font-bold text-gradient">10+</div>
+            <div className="text-3xl font-display font-bold text-gradient">35+</div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground">Years Experience</div>
           </div>
           <div className="hidden sm:block absolute -top-6 -right-6 glass rounded-2xl p-4 shadow-luxury animate-float" style={{ animationDelay: "1s" }}>
@@ -61,13 +61,13 @@ export function Welcome() {
             <Sparkles className="w-3.5 h-3.5" /> Meet your local cleaner
           </div>
           <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl lg:text-[40px] leading-tight">
-            Hi, I'm <span className="text-gradient">Daniel Alado</span> — Your Trusted Local Cleaner
+            Hi, I'm <span className="text-gradient">Alana</span> — Your Trusted Local Cleaner
           </h2>
           {/* glowing accent line */}
           <div className="mt-5 h-1 w-24 rounded-full bg-gradient-brand glow-blue" />
 
           <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            For over a decade, I've built A-1 Cleaning Services on one simple promise: <span className="text-foreground font-medium">we clean like we own it</span>.
+            For over 35 years, I've built A-1 Cleaning Services LLC on one simple promise: <span className="text-foreground font-medium">we clean like we own it</span>.
             From luxury homes to busy offices, every surface gets the same blue-purple standard of care — meticulous, dependable, and delivered with pride.
           </p>
           <p className="mt-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
@@ -95,7 +95,7 @@ export function Welcome() {
           </button>
 
           <div className="mt-10 grid grid-cols-3 gap-2 sm:gap-6 glass rounded-2xl p-4 sm:p-6">
-            <Counter to={10} suffix="+" label="Years" />
+            <Counter to={35} suffix="+" label="Years" />
             <Counter to={63} label="Mile radius" />
             <Counter to={500} suffix="+" label="Happy clients" />
           </div>

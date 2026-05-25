@@ -2,7 +2,7 @@ import { Star, MapPin, AlertTriangle, Calendar, Building2, Sparkles } from "luci
 import whyImg from "@/assets/hero-cleaning.jpg";
 
 const features = [
-  { icon: Star, title: "10+ Years Experience", desc: "A decade of trusted local cleaning excellence." },
+  { icon: Star, title: "35+ Years Experience", desc: "35 years of trusted local cleaning excellence." },
   { icon: MapPin, title: "63-Mile Radius", desc: "Serving Albuquerque and 15+ surrounding NM cities." },
   { icon: AlertTriangle, title: "24/7 Emergency Service", desc: "Day, night, weekend — we respond fast to emergencies." },
   { icon: Calendar, title: "Flexible Scheduling", desc: "Hourly, weekly, monthly, or annual custom cleaning plans." },

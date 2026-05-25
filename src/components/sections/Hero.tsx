@@ -54,7 +54,7 @@ export function Hero() {
               backgroundImage: "linear-gradient(90deg, #E8E0FF 0%, #2E5AFF 50%, #E8E0FF 60%)",
               animationDelay: "0.1s",
             }}>
-              10 Years of Excellence — 63 Miles of Clean.
+              35 Years of Excellence — 63 Miles of Clean.
             </span>
             <span className="block text-white/90 animate-fade-up text-2xl sm:text-3xl md:text-4xl lg:text-[39px] leading-tight" style={{ animationDelay: "0.2s", marginTop: "21px" }}>
               Emergency? We're There 24/7.
@@ -82,7 +82,7 @@ export function Hero() {
               { icon: Star, label: "5.0 Rated", sub: "Local clients" },
               { icon: Shield, label: "Licensed", sub: "& Insured" },
               { icon: Clock, label: "24/7", sub: "Emergency" },
-              { icon: Heart, label: "10+ Years", sub: "Experience" },
+              { icon: Heart, label: "35+ Years", sub: "Experience" },
             ].map((b) => (
               <div key={b.label} className="glass-dark rounded-2xl p-4 flex items-center gap-3 animate-float" style={{ animationDelay: `${Math.random()}s` }}>
                 <div className="w-10 h-10 rounded-xl bg-gradient-brand flex items-center justify-center shrink-0">

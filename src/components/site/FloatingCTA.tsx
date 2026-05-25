@@ -15,7 +15,7 @@ export function FloatingCTA() {
           href="tel:5054569603"
           className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-brand text-white px-3 sm:px-4 py-2.5 text-xs sm:text-sm font-semibold shadow-card hover:scale-105 transition-transform"
         >
-          <Phone className="w-4 h-4" /> Call Daniel
+          <Phone className="w-4 h-4" /> Call Alana
         </a>
         <a
           href="#contact"

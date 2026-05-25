@@ -29,6 +29,7 @@ export function QuoteForm() {
           <div className="mt-8 space-y-3">
             {[
               { icon: Phone, label: "(505) 456-9603", href: "tel:5054569603" },
+              { icon: Phone, label: "+1 888 680 9992 (Toll-Free)", href: "tel:18886809992" },
               { icon: Mail, label: "a1cleaningservicenm@gmail.com", href: "mailto:a1cleaningservicenm@gmail.com" },
               { icon: MapPin, label: "Albuquerque, NM + 63 miles", href: "#" },
               { icon: Clock, label: "Mon–Fri 8am–5pm • 24/7 Emergency", href: "#" },

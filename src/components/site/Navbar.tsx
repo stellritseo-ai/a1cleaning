@@ -60,13 +60,22 @@ export function Navbar() {
 
           {/* Right CTA */}
           <div className="hidden xl:flex items-center gap-3">
-            <a
-              href="tel:5054569603"
-              className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-foreground"
-            >
-              <Phone className="w-4 h-4 text-electric-blue" />
-              (505) 456-9603
-            </a>
+            <div className="flex flex-col items-end gap-0.5">
+              <a
+                href="tel:5054569603"
+                className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-foreground"
+              >
+                <Phone className="w-4 h-4 text-electric-blue" />
+                (505) 456-9603
+              </a>
+              <a
+                href="tel:18886809992"
+                className="flex items-center gap-2 text-xs font-medium text-electric-blue hover:text-foreground"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                Toll-Free: +1 888 680 9992
+              </a>
+            </div>
             <a
               href="#contact"
               className="relative inline-flex items-center gap-2 rounded-xl bg-gradient-brand text-white px-5 py-2.5 text-sm font-semibold shadow-card hover:scale-105 transition-transform"
@@ -103,6 +112,9 @@ export function Navbar() {
             <div className="mt-4 pt-4 border-t border-border space-y-2">
               <a href="tel:5054569603" className="flex items-center gap-2 text-sm">
                 <Phone className="w-4 h-4 text-electric-blue" /> (505) 456-9603
+              </a>
+              <a href="tel:18886809992" className="flex items-center gap-2 text-sm text-electric-blue">
+                <Phone className="w-4 h-4" /> Toll-Free: +1 888 680 9992
               </a>
               <a href="mailto:a1cleaningservicenm@gmail.com" className="flex items-center gap-2 text-sm break-all">
                 <Mail className="w-4 h-4 text-electric-blue" /> a1cleaningservicenm@gmail.com

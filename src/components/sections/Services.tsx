@@ -1,10 +1,9 @@
 import {
-  Home, Building2, Clock, Calendar, RefreshCw, Sparkles, Shield, AlertTriangle, ArrowRight
+  Home, Building2, Calendar, RefreshCw, Sparkles, Shield, AlertTriangle, ArrowRight
 } from "lucide-react";
 
 import svcHouse from "@/assets/service-house.jpg";
 import svcOffice from "@/assets/service-office.jpg";
-import svcHourly from "@/assets/service-hourly.jpg";
 import svcWeekly from "@/assets/service-weekly.jpg";
 import svcMonthly from "@/assets/service-monthly.jpg";
 import svcAnnual from "@/assets/service-annual.jpg";
@@ -14,7 +13,6 @@ import svcEmergency from "@/assets/service-emergency.jpg";
 const services = [
   { icon: Home, title: "House Cleaning", desc: "Deep cleaning, standard cleaning, move-in & move-out services for spotless homes.", img: svcHouse },
   { icon: Building2, title: "Office Cleaning", desc: "Professional office sanitizing and janitorial solutions for productive workspaces.", img: svcOffice },
-  { icon: Clock, title: "Hourly Cleaning", desc: "Flexible hourly cleaning services — pay only for the time you need.", img: svcHourly },
   { icon: Calendar, title: "Weekly Cleaning", desc: "Consistent weekly maintenance that keeps your property fresh all week.", img: svcWeekly },
   { icon: RefreshCw, title: "Monthly Cleaning", desc: "Perfect monthly deep refresh for busy homeowners and families.", img: svcMonthly },
   { icon: Sparkles, title: "Annual Cleaning", desc: "Complete annual deep cleaning to restore freshness throughout your property.", img: svcAnnual },
