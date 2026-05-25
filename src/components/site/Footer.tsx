@@ -1,4 +1,5 @@
-import { Sparkles, Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -8,17 +9,15 @@ export function Footer() {
         backgroundImage: "radial-gradient(circle at 20% 20%, oklch(0.58 0.25 265 / 0.4), transparent 40%), radial-gradient(circle at 80% 80%, oklch(0.45 0.25 305 / 0.4), transparent 40%)",
       }} />
 
-      <div className="relative mx-auto max-w-7xl px-4 py-20">
+      <div className="relative mx-auto max-w-7xl px-4" style={{ paddingTop: "60px", paddingBottom: "30px" }}>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 rounded-xl bg-white/10 backdrop-blur flex items-center justify-center border border-white/20">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <div className="font-display font-bold">A-1 Cleaning</div>
-                <div className="text-xs opacity-70">We Clean Like We Own It</div>
-              </div>
+            <div className="flex items-center mb-5">
+              <img
+                src={logo}
+                alt="A-1 Cleaning Services Logo"
+                className="h-16 sm:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <p className="text-sm text-white/70 leading-relaxed">
               Albuquerque's trusted blue-purple standard in luxury residential & commercial cleaning. 10 years strong, 63-mile radius, 24/7 emergency response.
@@ -53,16 +52,20 @@ export function Footer() {
           <div>
             <h4 className="font-display font-semibold mb-4 text-lg">Quick Links</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              {["Home","Services","Gallery","Why Us","Reviews","FAQs","Contact"].map(l => (
-                <li key={l}><a href={`#${l.toLowerCase().replace(" ","")}`} className="hover:text-white link-underline">{l}</a></li>
+              {["Home", "Services", "Gallery", "Why Us", "Reviews", "FAQs", "Contact"].map(l => (
+                <li key={l}>
+                  <a href={`#${l.toLowerCase().replace(" ", "")}`} className="hover:text-white link-underline">
+                    {l}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
         </div>
 
         <div className="mt-14 pt-8 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/60">© 2025 A-1 Cleaning Services LLC | Blue-Purple Clean You Can Trust</p>
-          <p className="text-xs text-white/60">Designed with 💜💙 in New Mexico</p>
+          <p className="text-xs text-white/60">© 2025 A-1 Cleaning Services LLC</p>
+          <p className="text-xs text-white/60">Designed By | StellR IT LLC</p>
         </div>
       </div>
     </footer>

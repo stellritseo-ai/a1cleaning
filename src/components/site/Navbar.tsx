@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Phone, Mail, Sparkles } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -7,7 +8,6 @@ const links = [
   { href: "#gallery", label: "Gallery" },
   { href: "#why", label: "Why Us" },
   { href: "#reviews", label: "Reviews" },
-  { href: "#faq", label: "FAQs" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -24,36 +24,24 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-2" : "py-4"
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "py-2" : "py-4"
+        }`}
     >
       <div
-        className={`mx-auto max-w-7xl px-4 transition-all duration-500 ${
-          scrolled ? "scale-[0.99]" : ""
-        }`}
+        className={`mx-auto max-w-7xl px-4 transition-all duration-500 ${scrolled ? "scale-[0.99]" : ""
+          }`}
       >
         <nav
-          className={`glass rounded-2xl px-5 py-3 flex items-center justify-between gap-4 transition-all duration-500 ${
-            scrolled ? "shadow-card" : ""
-          }`}
+          className={`glass rounded-2xl px-5 py-3 flex items-center justify-between gap-4 transition-all duration-500 ${scrolled ? "shadow-card" : ""
+            }`}
         >
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-11 h-11 rounded-xl bg-gradient-brand flex items-center justify-center shadow-card group-hover:scale-110 transition-transform">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
-              <div className="absolute inset-0 rounded-xl bg-gradient-brand blur-xl opacity-50 group-hover:opacity-80 transition-opacity -z-10" />
-            </div>
-            <div className="hidden sm:block leading-tight">
-              <div className="font-display font-bold text-sm tracking-tight text-foreground">
-                A-1 CLEANING <span className="text-gradient">SERVICES</span>
-              </div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-                We Clean Like We Own It
-              </div>
-            </div>
+          <a href="#home" className="flex items-center group">
+            <img
+              src={logo}
+              alt="A-1 Cleaning Services Logo"
+              className="h-16 sm:h-18 w-auto object-contain hover:scale-105 transition-transform duration-300"
+            />
           </a>
 
           {/* Center menu */}

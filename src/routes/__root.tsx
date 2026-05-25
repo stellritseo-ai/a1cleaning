@@ -72,16 +72,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "A-1 Cleaning Services LLC | Albuquerque, NM" },
+      { name: "description", content: "Premium residential and commercial cleaning across Albuquerque and surrounding areas. 10 years of trusted excellence." },
+      { name: "author", content: "A-1 Cleaning Services LLC" },
+      { property: "og:title", content: "A-1 Cleaning Services LLC" },
+      { property: "og:description", content: "Premium residential and commercial cleaning across Albuquerque and surrounding areas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@A1Cleaning" },
     ],
     links: [
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "/favicon.png",
+      },
       {
         rel: "stylesheet",
         href: appCss,
